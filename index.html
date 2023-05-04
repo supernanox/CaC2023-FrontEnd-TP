@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conf Bs As - TP Front End - Mariano Casalini</title>
+  <link href="css/estilos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--AQUI COMIENZA EL NAVBAR-->
+  <nav class="navbar navbar-expand-lg sticky-top" id="color-bg"> <!--Sticky para que quede arriba-->
+    <div class="container-fluid">
+      <div>
+        <img src="recusos/img/logoCaC-xs.png" alt="Logo Codo a Codo" class="ms-5"> <!--ms-5 para el margin start-->
+      </div>
+      <a class="navbar-brand fs-4 text-white" href="#">Conf Bs As</a> <!--fs-4 para el font size-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse me-lg-5" id="navbarNav">
+        <!--flex-row.reverse para alinear a la derecha-->
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#la_conferencia">La conferencia</a>
+            <!--link-secondary para el color gris-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">Conviertete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="boton-nav-comprar" href="#">Comprar tickets</a> <!--Color en estilos.css-->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--AQUI FINALIZA EL NAVBAR-->
+
+  <!--AQUI COMIENZA LA SECCION "LA CONFERENCIA"-->
+  <div class="container-fluid bg-dark p-0" id="la_conferncia">
+    <div class="card text-bg-dark border-0">
+      <img src="recusos/img/imagen_principal.png" class="card-img opacity-50 img-fluid " alt="Buenos Aires" />
+      <div class="card-img-overlay text-end"> <!--text-end para alinear el texto a la derecha-->
+        <div class="row align-items-center h-100"> <!--Creo una fila y dos columnas para dividir en 2 el overlay-->
+          <div class="col">
+          </div>
+          <div class="col">
+            <div class="container-fluid align-content-around">
+              <h5 class="card-title fs-1 ">Conf Bs As</h5>
+              <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+                comunidad
+                el
+                conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
+                mienbros
+                del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                esperamos!</p>
+              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+              <button type="button" class="btn btn-primary border-0" id="boton-conferencia-comprar">Comprar
+                tickets</button> <!--Color en estilos.css-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--AQUI FINALIZA LA SECCION "LA CONFERENCIA"-->
+
+  <!--AQUI COMIENZA LA SECCION "ORADORES"-->
+  <div class="container-fluid">
+    <h5 class="text-center fs-6 mt-2">CONOCE A LOS</h5>
+  </div>
+  <div class="container-fluid">
+    <h2 class="text-center fs-2 fw-semibold">ORADORES</h2> <!--fw-semibold para hacerla negrita-->
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center gap-4">
+    <div class="card" style="width: 18rem;">
+      <img src="recusos/img/steve.png" class="card-img-top rounded-1" alt="Steve Jobs">
+      <!--rounded-0 para las esquinas-->
+      <div class="card-body">
+        <span class="badge text-bg-warning">JavaScript</span>
+        <span class="badge text-bg-primary">React</span>
+        <h5 class="card-title fw-semibold">Steve Jobs</h5>
+        <p class="card-text">Steven Paul Jobs ​​​​fue un empresario, diseñador industrial, magnate empresarial,
+          propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo
+          accionista individual de The Walt Disney Company.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="recusos/img/bill.jpg" class="card-img-top rounded-1" alt="Bill Gates">
+      <div class="card-body">
+        <span class="badge text-bg-warning">JavaScript</span>
+        <span class="badge text-bg-primary">React</span>
+        <h5 class="card-title fw-semibold">Bill Gates</h5>
+        <p class="card-text">William Henry Gates III es un magnate empresarial, desarrollador de software, inversor,
+          autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul
+          Allen.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="recusos/img/ada.jpeg" class="card-img-top rounded-1" alt="Ada Lovelace">
+      <div class="card-body">
+        <span class="badge text-bg-secondary">Negocios</span>
+        <span class="badge text-bg-danger">Startups</span>
+        <h5 class="card-title fw-semibold">Ada Lovelace</h5>
+        <p class="card-text">Augusta Ada King, condesa de Lovelace, y conocida como Ada Lovelace, fue una matemática y
+          escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de
+          Charles Babbage, la denominada máquina analítica.</p>
+      </div>
+    </div>
+  </div>
+  <!--AQUI FINALIZA LA SECCION "ORADORES"-->
+
+  <!--AQUI COMIENZA LA SECCION LUGAR Y FECHA"-->
+  <div class="card mb-12 mt-4">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="recusos/img/honolulu.jpg" class="img-fluid h-100" alt="Buenos Aires">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body bg-dark h-100 text-white">
+          <h3>Bs As - Octubre</h3>
+          <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+            Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se
+            refiere al área urbana de la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
+            formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+            <button type="button" class="btn btn-outline-light">Conocé más</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--AQUI FINALIZA LA SECCION LUGAR Y FECHA"-->
+
+  <!--AQUI COMIENZA LA SECCION FORMULARIO"-->
+  <div class="container-fluid text-center pt-4">
+    <h6 class="container" id="tit1-form">CONVIÉRTETE EN UN</h6> 
+    <h3 class="container fw-semibold" id="tit2-form">ORADOR</h3>
+    <h6 class="container" id="tit3-form">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h6>
+  </div>
+
+  <div class="container-fluid w-50" id="form-container">
+    <div class="container-fluid d-flex row text-center w-auto"> <!--w-auto para acomodar los inputs-->
+      <div class="col">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea" placeholder="¿Sobre qué quieres hablar?"></textarea>
+      </div>
+    </div>
+    <div class="container text-black-50">
+      <h6 id="recordatorio-form">Recuerda incluir un título para tu charla</h6>
+    </div>
+
+  </div>
+
+  <!--AQUI FINALIZA LA SECCION FORMULARIO"-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
