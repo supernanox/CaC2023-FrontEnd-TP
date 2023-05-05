@@ -27,17 +27,17 @@
         <!--flex-row.reverse para alinear a la derecha-->
         <ul class="navbar-nav fs-5">
           <li class="nav-item">
-            <a class="nav-link link-secondary" href="#la_conferencia">La conferencia</a>
+            <a class="nav-link link-secondary text-white-50" href="#la_conferencia">La conferencia</a>
             <!--link-secondary para el color gris-->
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary" href="#">Los oradores</a>
+            <a class="nav-link link-secondary text-white-50" href="#">Los oradores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary" href="#">El lugar y la fecha</a>
+            <a class="nav-link link-secondary text-white-50" href="#">El lugar y la fecha</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary" href="#">Conviertete en orador</a>
+            <a class="nav-link link-secondary text-white-50" href="#">Conviertete en orador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="boton-nav-comprar" href="#">Comprar tickets</a> <!--Color en estilos.css-->
@@ -56,8 +56,8 @@
         <div class="row align-items-center h-100"> <!--Creo una fila y dos columnas para dividir en 2 el overlay-->
           <div class="col">
           </div>
-          <div class="col">
-            <div class="container-fluid align-content-around">
+          <div class="col overflow-hidden">
+            <div class="container-fluid align-content-around col">
               <h5 class="card-title fs-1 ">Conf Bs As</h5>
               <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
                 comunidad
@@ -178,13 +178,41 @@
     <div class="container text-black-50">
       <h6 id="recordatorio-form">Recuerda incluir un título para tu charla</h6>
     </div>
-    <div>
+    <div class="container ms-0 me-0 mt-4 mb-4">
       <input class="btn btn-primary border-0 w-100" id="boton-enviar-form" type="submit" value="Submit">
 
     </div>
 
   </div>
   <!--AQUI FINALIZA LA SECCION FORMULARIO"-->
+
+  <!--AQUI COMIENZA LA SECCION FOOTER"-->
+  <div class="container-fluid text-center py-3" id="footer">
+    <div class="row">
+      <div class="col text-white">
+        Preguntas frecuentes
+      </div>
+      <div class="col text-white">
+        Contáctanos
+      </div>
+      <div class="col text-white">
+        Prensa
+      </div>
+      <div class="col text-white">
+        Conferencias
+      </div>
+      <div class="col text-white">
+        Términos y condiciones
+      </div>
+      <div class="col text-white">
+        Privacidad
+      </div>
+      <div class="col text-white">
+        Estudiantes
+      </div>
+    </div>
+  </div>
+  <!--AQUI FINALIZA LA SECCION FOOTER"-->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

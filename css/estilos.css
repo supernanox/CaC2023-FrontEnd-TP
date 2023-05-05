@@ -25,3 +25,8 @@
 #boton-enviar-form {
     background-color: #96c93e;
 }
+
+#footer{
+    /* Se utilizan los siguientes colores para el degraddo: IZQUIERDA #1c3643 y DERECHA #1e5372 - Se utiliza https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,114,1) 100%);
+}
