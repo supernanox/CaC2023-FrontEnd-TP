@@ -2,7 +2,7 @@
     color: #27a844;
 }
 
-#boton-conferencia-comprar{
+#boton-conferencia-comprar {
     background-color: #27a844;
 }
 
@@ -26,7 +26,21 @@
     background-color: #96c93e;
 }
 
-#footer{
+#footer {
     /* Se utilizan los siguientes colores para el degraddo: IZQUIERDA #1c3643 y DERECHA #1e5372 - Se utiliza https://cssgradient.io/ */
-    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,114,1) 100%);
+    background: linear-gradient(90deg, rgba(28, 54, 67, 1) 0%, rgba(30, 83, 114, 1) 100%);
+}
+
+/* Se utilizan las @media para poder manejar el contenido de la primera sección, para que al ser la resolución mayor a 990px (resolución donde bootstrap cambia el menú a hamburguesa) utilice el 50% del contenedor y ubique los elementos a la derecha, mientras que al ser menor a los 990px, utlice el 100% del contenedor para aprovechar la pantalla y genere un scroll bar para que el contenido se oculte si es necesario. Si utilizaba un Card Overlay, en pantallas chicas el contenido salía del contenedor, eso era anunciado en el sitio oficial de Bootstrap. */
+@media only screen and (max-width: 990px) {
+    #contenedor-tarjeta-overlay {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    #contenedor-tarjeta-overlay {
+        width: 50%;
+        margin-left: 50%;
+    }
 }

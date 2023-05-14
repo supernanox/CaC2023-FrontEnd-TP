@@ -52,12 +52,10 @@
   <div class="container-fluid bg-dark p-0" id="la_conferencia">
     <div class="card text-bg-dark border-0">
       <img src="recusos/img/imagen_principal.png" class="card-img opacity-50 img-fluid " alt="Buenos Aires" />
-      <div class="card-img-overlay text-end"> <!--text-end para alinear el texto a la derecha-->
-        <div class="row align-items-center h-100"> <!--Creo una fila y dos columnas para dividir en 2 el overlay-->
+      <div class="card-img-overlay text-end  overflow-scroll"> <!--text-end para alinear el texto a la derecha-->
+        <div class="row align-items-center h-100"> <!--Creo una fila y dos columnas para dividir en 2 el overlay, se crean 2 @media para manejar la posición dependiendo de la pantalla-->
           <div class="col">
-          </div>
-          <div class="col overflow-hidden">
-            <div class="container-fluid align-content-around col">
+            <div class="container-fluid col" id="contenedor-tarjeta-overlay">
               <h5 class="card-title fs-1 ">Conf Bs As</h5>
               <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
                 comunidad
@@ -189,25 +187,25 @@
   <!--AQUI COMIENZA LA SECCION FOOTER"-->
   <div class="container-fluid text-center py-3" id="footer">
     <div class="row">
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Preguntas frecuentes
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Contáctanos
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Prensa
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Conferencias
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Términos y condiciones
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Privacidad
       </div>
-      <div class="col text-white">
+      <div class="col text-white boton-footer">
         Estudiantes
       </div>
     </div>
