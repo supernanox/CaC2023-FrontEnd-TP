@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conf Bs As - TP Front End - Mariano Casalini</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="css/estilos-compra.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!--AQUI COMIENZA EL NAVBAR-->
+    <nav class="navbar navbar-expand-lg sticky-top" id="color-bg"> <!--Sticky para que quede arriba-->
+        <div class="container-fluid">
+            <div>
+                <img src="recusos/img/logoCaC-xs.png" alt="Logo Codo a Codo" class="ms-5">
+                <!--ms-5 para el margin start-->
+            </div>
+            <a class="navbar-brand fs-4 text-white" href="#">Conf Bs As</a> <!--fs-4 para el font size-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse me-lg-5" id="navbarNav">
+                <!--flex-row.reverse para alinear a la derecha-->
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary text-white-50" href="./index.html#la_conferencia">La conferencia</a>
+                        <!--link-secondary para el color gris-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary text-white-50" href="./index.html#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary text-white-50" href="./index.html#lugar_y_fecha">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary text-white-50" href="./index.html#form">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="boton-nav-comprar" href="#">Comprar tickets</a>
+                        <!--Color en estilos.css-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--AQUI FINALIZA EL NAVBAR-->
+
+    <!--AQUI COMIENZA LA SECCION "COMPRA-FORMULARIO"-->
+    <div class="container pt-3 pb-3" id="contenedor-formulario">
+        <div class="container text-center">
+            <div class="container row gap-1">
+                <div class="col border border-1 border-info">
+                    <h2 class="h2-info fw-semibold pt-2 pb-2">Estudiante</h2>
+                    <h4 class="h4-info pt-2 pb-2">Tienen un descuento</h4>
+                    <h3 class="h3-info fw-semibold pt-2 pb-2">80%</h3>
+                    <h5 class="h5-info pt-2 pb-3">* presentar documentación</h5>
+                </div>
+                <div class="col border border-1 border-info">
+                    <h2 class="h2-info fw-semibold pt-2 pb-2">Trainee</h2>
+                    <h4 class="h4-info pt-2 pb-2">Tienen un descuento</h4>
+                    <h3 class="h3-info fw-semibold pt-2 pb-2">50%</h3>
+                    <h5 class="h5-info pt-2 pb-3">* presentar documentación</h5>
+                </div>
+                <div class="col border border-1 border-warning">
+                    <h2 class="h2-info fw-semibold pt-2 pb-2">Junior</h2>
+                    <h4 class="h4-info pt-2 pb-2">Tienen un descuento</h4>
+                    <h3 class="h3-info fw-semibold pt-2 pb-2">15%</h3>
+                    <h5 class="h5-info pt-2 pb-2">* presentar documentación</h5>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="fs-6 pt-1 pb-0 mb-0">VENTA</h5>
+                <h2 class="fs-3 fw-semibold pt-0 mt-0">VALOR DE TICKET $200</h2>
+            </div>
+
+            <div class="container mt-1 p-1">
+                <div class="row gap-2">
+                    <div class="col ps-0 pe-0">
+                        <label for="form-nombre" class="form-label"></label>
+                        <input type="text" id="form-nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col ps-0 pe-0">
+                        <label for="form-apellido" class="form-label"></label>
+                        <input type="text" id="form-apellido" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <label for="form-correo" class="form-label"></label>
+                    <input type="email" id="form-correo" class="form-control" placeholder="Correo">
+                </div>
+
+                <div class="row gap-2 mt-3">
+                    <div class="col text-start ps-0 pe-0">
+                        <label for="form-cantidad" class="form-label">Cantidad</label>
+                        <input type="number" id="form-cantidad" class="form-control" placeholder="Cantidad">
+                    </div>
+                    <div class="col text-start ps-0 pe-0">
+                        <label for="form-categoria" class="form-label">Categoría</label>
+                        <select class="form-select" id="form-categoria">
+                            <option value="1" selected>Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                          </select>
+                    </div>
+                </div>
+
+                <div class="row text-start pt-2 mt-4" id="total-contenedor">
+                    <p id="form-total">Total a Pagar: $</p>
+                </div>
+
+                <div class="row pt-4 gap-2">
+                    <div class="col d-grid p-0">
+                        <input class="btn btn-primary border-0" type="reset" value="Borrar" id="boton-borrar">
+                    </div>
+                    <div class="col d-grid p-0">
+                        <input class="btn btn-primary border-0" type="button" value="Resumen" id="boton-resumen" onclick="calculo()">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--AQUI FINALIZA LA SECCION "COMPRA-FORMULARIO"-->
+
+    <!--AQUI COMIENZA LA SECCION FOOTER"-->
+    <div class="container-fluid text-center py-3" id="footer">
+        <div class="row">
+            <div class="col text-white boton-footer">
+                Preguntas frecuentes
+            </div>
+            <div class="col text-white boton-footer">
+                Contáctanos
+            </div>
+            <div class="col text-white boton-footer">
+                Prensa
+            </div>
+            <div class="col text-white boton-footer">
+                Conferencias
+            </div>
+            <div class="col text-white boton-footer">
+                Términos y condiciones
+            </div>
+            <div class="col text-white boton-footer">
+                Privacidad
+            </div>
+            <div class="col text-white boton-footer">
+                Estudiantes
+            </div>
+        </div>
+    </div>
+    <!--AQUI FINALIZA LA SECCION FOOTER"-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="./funciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.h2-info {
+  font-size: 1.6rem;
+}
+
+.h4-info {
+  font-size: 1.1rem;
+}
+
+.h3-info {
+  font-size: 1.3rem;
+}
+
+.h5-info {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 985px) {
+  #contenedor-formulario {
+    width: 672px;
+    height: auto;
+  }
+}
+
+#total-contenedor {
+    background-color: #cce5ff;
+}
+
+#boton-borrar {
+    background-color: #96c93e;
+}
+
+#boton-resumen {
+    background-color: #96c93e;
+}
